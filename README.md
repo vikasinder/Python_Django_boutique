@@ -1,104 +1,128 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# DJANGO / PYTHON - Boutique Project
 
-Welcome vikasinder,
+An E-commerce Web Application built with the power of Django - Python Framework. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
 
-## Gitpod Reminders
+## UX
+ 
+The purpose of this project was to build a web application based around business login used for selling products online to interested clientele. The site owner's goal is to make profits by selling products to customers through an online platform. The user's/customer's goals are met through finding products they need or want by browsing through the catalogs of products available on the website platform.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The **user stories** below showcases the variety of functionalities built into the project.
 
-`python3 -m http.server`
+### E-Commerce User Stories
 
-A blue button should appear to click: _Make Public_,
+- **Viewing and Navigation**
+    - As a shopper, I want to be able to view a list of products, so that I can select some to purchase
+    - As a shopper, I want to be able to view individual product details, so that I can identify the price description product rating, product image and available sizes
+    - As a shopper, I want to be able to quickly identify deals, clearance items, and special offers, so that I can take advantage of special savings on products i'd like to purchase
+    - As a shopper, I want to be able to easily view the total of my purchases at any time, so that I can avoid spending too much
 
-Another blue button should appear to click: _Open Browser_.
+- **Registration and User Accounts**
+    - As a site user, I want to be able to easily register for an account, so that I can have a personal account and be able to view my profile.
+    - As a site user, I want to be able to easily login or logout, so that I can access my personal account information.
+    - As a site user, I want to be able to easily recover my password incase I forget it, so that I can recover access to my account.
+    - As a site user, I want to be able to receive an email confirmation after registering, so that I can verify that my account registration was successful.
+    - As a site user, I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations, and save my payment information.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- **Sorting and Searching**
+    - As a shopper, I want to be able to sort the list of available products, so that I can easily identify the best rated, best priced and categorically sorted products.
+    - As a shopper, I want to be able to sort a specific category of product, so that I can find the best-priced or best-rated product in a specific category or sort the products in that category by name.
+    - As a shopper, I want to be able to sort multiple categories of products simultaneously, so that I can find the best-rated products across broad categories, such as "clothing" or "home-ware".
+    - As a shopper, I want to be able to search for a product by name or description, so that I can find a specific product I'd like to purchase.
+    - As a shopper, I want to be able to easily see what I've searched for and the number of results, so that I can quickly decide whether the product I want is available.
 
-A blue button should appear to click: _Make Public_,
+- **Purchasing and Checkout**
+    - As a shopper, I want to be able to easily select the size and quantity of a product when purchasing it, so that I can ensure I don't accidentally select the wrong product, quantity or size.
+    - As a shopper, I want to be able to view items in my bag to be purchased, so that I can identify the total cost of my purchase and all items I will receive
+    - As a shopper, I want to be able to adjust the quantity of individual items in my bag easily, so that I can easily make changes to my purchase before checkout.
+    - As a shopper, I want to be able to easily enter my payment information, so that I can check out quickly and with no hassles.
+    - As a shopper, I want to be able to feel my personal information is safe and secure, so that I can confidently provide the needed information to make a purchase.
+    - As a shopper, I want to be able to view an order confirmation after checkout, so that I can verify that I haven't made any mistakes
+    - As a shopper, I want to be able to receive an email confirmation after checking out, so that I can keep the confirmation of what I've purchased for my records.
 
-Another blue button should appear to click: _Open Browser_.
+- **Admin and Store Management**
+    - As a stor owner, I want to be able to add a product, so that I can add new items to my store.
+    - As a store owner, I want to be able to edit/update a product, so that I can change product prices, descriptions, images, and other product criteria.
+    - As a store owner, I want to be able to delete a product, so that I can remove items that are no longer for sale.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## Technologies Used
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- [HTML](https://www.w3schools.com/html/default.asp)
+    - The project uses **HTML** to produce the web contents.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- [CSS](https://www.w3schools.com/CSS/default.asp)
+    - The project uses **CSS** to create visually pleasing content.
 
-------
+- [Bootstrap 4.4](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+    - The project uses **Bootstrap** version 4.4, frontend design framework, to produce better UI/UX for mobile first development.
 
-## Release History
+- [Python](https://www.python.org/doc/)
+    - The project uses **Python** to process server side queries, such as processing payments and user authentications.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- [JQuery](https://jquery.com)
+    - The project uses **JQuery** to simplify DOM manipulation for UI contents.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- [Django](https://www.djangoproject.com/)
+    - The project uses the **Django** , Python Full Stack framework, to simplify and speedup the development of a Full Stack Web Application.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- [PostgreSQL](https://www.heroku.com/postgres)
+    - In this project, **Heroku Postgres** is relational database addon chosen to handle database management when deployed.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- [AWS](https://aws.amazon.com/)
+    - **Amazon Web Services (AWS)** is used to host the static files for the deployed project.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- [Stripe](https://stripe.com/en-ca)
+    - **Stripe** is the software utilized for the payment system in this project .
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Testing
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+1. Responsive Web Design:
+    1. User visits site on mobile or tablet device.
+    2. The website adjusts to the different screen sizes and displays UI elements in a neat and clean structure for the user experience
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+2. Viewing and Navigation:
+    1. User chooses a product category or filters out the list for a specific interests
+    2. The web application retrieves the desired results for the user to find the best priced and best quality products.
+    3. Selecting a product results in navigating to desired product page with detail of the product.
+    4. Shopping bag also displays price for selected products, along with notifications allowing user to keep track of purchases
+ 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+3. Registration and User Accounts:
+    1. On registration page, submitting an empty form prompts user with an error message to fill out the required fields.
+    2. On successful registration, user receives email notification and feedback message to check the personal email.
+    3. Application sends feedback message for using a different user id for registration if the current ID already exist.
+    4. Once logged in the user is able to log out with no issues.
+        1. User is also capable of tracking payment records of purchased products.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+3. Purchasing and Checkout:
+    1. Clients buying a product on the site are able to update or delete the product with a feedback notification.
+    2. On successful purchase of a product, stripe processes the payment information for irregularities and keeps record of the event in the backend dashboard.
+    3. Testing the stripe webhook for avoiding repeated purchase of the same order cause by a customer mistake showed a successful response.
+    4. Transactions completed by a shopper is not revealed to another shopper when checking their transaction records on their profiles.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+4. Admin and Store Management:
+    1. Store owner attempting to edit, delete, or add a product is capable of doing so with the admin login.
+    2. Regular user's are unable to manipulate values of the products on the e-commerce site.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+ 
 
-------
+## Deployment
 
-## FAQ about the uptime script
+The E-commerce FullStack Django project has been deployed to 👉[Heroku.](https://kmadjei-boutique-ado.herokuapp.com/)👈
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Content
+- The content to complete this [project](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/250e2c2b8e43cccb56b4721cd8a8bd4de6686546) was provided by the Code Institute.
 
-**How will this affect me?**
+### Media
+- Media files for the E-commerce project was provided by the Code Institute. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Acknowledgements
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- The completion of the Boutique Ado, Django Full Stack Development Project module, would not have been possible without the guidance of the Code Institute instructors and my instructor, Usmaan Mujtaba, at the Canadian Business
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### other resources
+- [Django Documentation](https://docs.djangoproject.com/en/3.2/ref/templates/builtins/)
